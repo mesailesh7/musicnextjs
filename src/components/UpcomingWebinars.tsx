@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { HoverEffect } from "./ui/card-hover-effect";
@@ -65,6 +66,7 @@ const UpcomingWebinars = () => {
             items={featuredWebinars.map((webinar) => ({
               title: webinar.title,
               description: webinar.description,
+              link: "/",
             }))}
           />
         </div>
